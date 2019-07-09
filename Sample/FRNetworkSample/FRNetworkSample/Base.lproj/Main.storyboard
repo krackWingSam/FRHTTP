@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FRNetworkSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tv4-GK-0LE">
+                                <rect key="frame" x="30" y="74" width="354" height="30"/>
+                                <state key="normal" title="HTTP - GET"/>
+                                <connections>
+                                    <action selector="action_HTTP_GET:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zZi-w1-V8r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCy-mf-hJX">
+                                <rect key="frame" x="30" y="134" width="354" height="30"/>
+                                <state key="normal" title="HTTP - POST : urlencoded"/>
+                                <connections>
+                                    <action selector="action_HTTP_POST:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wvD-GC-s3x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9j-b1-XBW">
+                                <rect key="frame" x="30" y="194" width="354" height="30"/>
+                                <state key="normal" title="HTTP - Post : JSON"/>
+                                <connections>
+                                    <action selector="action_HTTP_POST:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XHG-h5-db2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tv4-GK-0LE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2jn-uh-aTR"/>
+                            <constraint firstItem="sCy-mf-hJX" firstAttribute="left" secondItem="6Tk-OE-BBY" secondAttribute="left" constant="30" id="3oG-ZP-UIp"/>
+                            <constraint firstItem="h9j-b1-XBW" firstAttribute="top" secondItem="sCy-mf-hJX" secondAttribute="bottom" constant="30" id="5EN-u8-Mt2"/>
+                            <constraint firstItem="Tv4-GK-0LE" firstAttribute="left" secondItem="6Tk-OE-BBY" secondAttribute="left" constant="30" id="JNV-jV-obJ"/>
+                            <constraint firstItem="sCy-mf-hJX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KQq-KE-tRF"/>
+                            <constraint firstItem="Tv4-GK-0LE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="QYX-yi-vvG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sCy-mf-hJX" secondAttribute="trailing" constant="30" id="SLc-Op-zxJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h9j-b1-XBW" secondAttribute="trailing" constant="30" id="cRf-u0-tJ1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tv4-GK-0LE" secondAttribute="trailing" constant="30" id="hCb-xN-ggW"/>
+                            <constraint firstItem="h9j-b1-XBW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="huj-qA-a0N"/>
+                            <constraint firstItem="sCy-mf-hJX" firstAttribute="top" secondItem="Tv4-GK-0LE" secondAttribute="bottom" constant="30" id="mm9-Ud-Oq1"/>
+                            <constraint firstItem="h9j-b1-XBW" firstAttribute="left" secondItem="6Tk-OE-BBY" secondAttribute="left" constant="30" id="ytf-Fh-TdL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

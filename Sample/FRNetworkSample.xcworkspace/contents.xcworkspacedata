@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:FRNetworkSample/FRNetworkSample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../FRHTTP/FRHTTP.xcodeproj">
+   </FileRef>
+</Workspace>
