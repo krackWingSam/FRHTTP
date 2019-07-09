@@ -9,19 +9,20 @@
 import UIKit
 import FRHTTP
 
-let testURLString = "http://api.randomuser.me/"
+let testGetURLString = "http://api.randomuser.me/"
+let testPostURLString = "https://my-json-server.typicode.com/krackwingsam/FRHTTP/posts"
 
 class HTTPFunc: NSObject {
     class func get() {
-        FRNetwork.load(url: testURLString + "?results=2") { (response) in
+        FRNetwork.load(url: testGetURLString + "?results=2") { (response) in
             print(response)
         }
     }
     
     class func post(contentType: HTTPContentType) {
-        let data = ["result":"10"]
-        guard var request = FRHTTPUtil.getRequest(testURLString, data: data, contentType: contentType) else { return }
-        request.httpMethod = "GET"
+        let data = ["id":"3",
+                    "title":"changed Title"]
+        guard let request = FRHTTPUtil.getRequest(testPostURLString, data: data, contentType: contentType) else { return }
         FRNetwork.load(request: request, completionHandler: responseHandler(response:))
     }
     

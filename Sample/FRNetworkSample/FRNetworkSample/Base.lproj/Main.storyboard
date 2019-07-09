@@ -34,7 +34,7 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9j-b1-XBW">
                                 <rect key="frame" x="30" y="194" width="354" height="30"/>
-                                <state key="normal" title="HTTP - Post : JSON"/>
+                                <state key="normal" title="HTTP - POST : JSON"/>
                                 <connections>
                                     <action selector="action_HTTP_POST:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XHG-h5-db2"/>
                                 </connections>
